@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.axant.axemas.libs.AnimationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/animation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@id/animation_layout_sidebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/sidebarSection"
+            class="it.axant.axemas.SectionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- To make LinearLayout clickable to trigger onContentTouchedWhenOpening()  -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/animation_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+
+        <fragment
+            android:id="@+id/currentSection"
+            class="it.axant.axemas.SectionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+</it.axant.axemas.libs.AnimationLayout>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link href="ratchet/css/ratchet.min.css" rel="stylesheet">
+        <link href="axemas/axemas.css" rel="stylesheet">
+        <title>Native interaction</title>
+    </head>
+    <body>
+
+
+
+        <div style="margin: 10px; text-align: center;">
+
+            <p>
+                There are two ways to interact with the native code in Axemas.
+            </p>
+
+            <p>
+                You can call registered native handles from JavaScript.
+            </p>
+            <button id="get-info" class="btn btn-primary">Show some info</button>
+            <br>
+            <br>
+
+            <input type="number" id="number-of-views" max="100" min="0" value="159">
+            <button id="issue-call" class="btn btn-positive">Call number</button>
+
+            <br><br>
+            <p>
+                The native code can call a  JavaScript registered handler.
+            </p>
+
+            <p>
+                Time shown below is updated every second with an event from the native code.
+            </p>
+
+            <div style="font-weight: bold;" id="time-div"></div>
+
+            <p>
+                Proceed to the next part when you are ready.
+            </p>
+            <button id="continue-tutorial" class="btn btn-primary">Continue tutorial</button>
+
+
+        </div>
+        
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="axemas/gestures.js"></script>
+        <script src="axemas/axemas.js"></script>
+        <script src="js/native.js"></script>
+    </body>
+</html>

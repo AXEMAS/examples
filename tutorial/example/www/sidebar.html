@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link href="ratchet/css/ratchet.min.css" rel="stylesheet">
+        <link href="axemas/axemas.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="table-view">
+                <li class="table-view-divider" style="padding-top: 20px;">SIDEBAR</li>
+                <li class="table-view-cell media">
+                    <a id="landing-link">
+                        <div class="media-body">
+                            Landing Page
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a id="native-link">
+                        <div class="media-body">
+                            Native Interaction
+                        </div>
+                    </a>
+                </li>
+                <li class="table-view-cell media">
+                    <a id="fragment-link">
+                        <div class="media-body">
+                            Open Native View
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="axemas/gestures.js"></script>
+        <script src="axemas/axemas.js"></script>
+        <script>
+            $(function() {
+                $('#landing-link').on('singletap', function() {
+                    axemas.gotoFromSidebar({url: 'www/index.html',
+                                                 'stackMaintainedElements':'0'});
+                });
+                $('#native-link').on('singletap', function() {
+                    axemas.gotoFromSidebar({url: 'www/native.html',
+                                                 'toggleSidebarIcon': 'slide_icon',
+                                                 'stackMaintainedElements':'0'});
+                });
+                $('#fragment-link').on('singletap', function() {
+                    axemas.call('push-native-view',{'close': true});
+                });
+              });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link href="ratchet/css/ratchet.min.css" rel="stylesheet">
+        <link href="axemas/axemas.css" rel="stylesheet">
+        <title>Landing</title>
+    </head>
+    <body>
+
+
+
+        <div style="margin: 10px; text-align: center;">
+            <h2>Landing page</h2>
+
+            <p>
+                This is the first <span style="font-weight: bold;">Section</span> of your Axemas
+                application.<br>
+                You can always have more by pushing them on the navigation stack.<br>
+                This application was created with a sidebar, but is hidden at the moment. You can
+                choose to create an application without a sidebar.
+            </p>
+
+
+
+            <p>
+                The following button will open a new <span style="font-weight: bold;">Section</span>
+                and push it on top of the navigation stack.
+            </p>
+            <button id="with-sidebar" class="btn btn-primary">Open with sidebar</button>
+
+            <br><br>
+            <p>
+                Same as above but without the sidebar.
+            </p>
+            <button id="no-sidebar" class="btn  btn-negative">Open without sidebar</button>
+
+            <br><br>
+            <p>
+                Sometimes you want to clear the navigation stack before pushing a new view.
+            </p>
+            <button id="push-and-clear-stack" class="btn  btn-positive">Open and clear stack</button>
+
+        </div>
+        
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="axemas/gestures.js"></script>
+        <script src="axemas/axemas.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

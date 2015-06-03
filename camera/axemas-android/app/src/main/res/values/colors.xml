@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="axemas_white">#ffffff</color>
+    <color name="axemas_black">#000000</color>
+    <color name="axemas_background_overlay">#7A000000</color>
+    <color name="axemas_transparent">#00000000</color>
+</resources>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link href="ratchet/css/ratchet.min.css" rel="stylesheet">
+        <link href="axemas/axemas.css" rel="stylesheet">
+        <title>Second</title>
+    </head>
+    <body>
+
+    <div style="margin: 10px; text-align: center;">
+
+        <p>
+            The two buttons below push a new <span style="font-weight: bold;">Section</span> on the navigation stack with
+            stack altering option:
+        </p>
+        <lu style="text-align: left;">
+            <li>
+                <span style="font-weight: bold;">stackMaintainedElements</span> keeps # elements
+                on the bottom of the stack
+            </li>
+            <li>
+                <span style="font-weight: bold;">stackPopElements</span> removes # elements from
+                the the stack
+            </li>
+        </lu>
+
+        <input type="number" id="number-of-views" max="100" min="0" value="2">
+        <button id="pop-views" class="btn btn-negative">Pop</button>
+        <button id="maintain-views" class="btn btn-positive">Maintain</button>
+
+        <br><br>
+
+        <p>
+            When you are done with pushing and popping
+            <span style="font-weight: bold;">Sections</span>, you may continue.
+        </p>
+        <button id="continue-tutorial" class="btn btn-primary">Continue tutorial</button>
+
+
+    </div>
+
+        
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="axemas/gestures.js"></script>
+        <script src="axemas/axemas.js"></script>
+        <script src="js/second.js"></script>
+    </body>
+</html>
